@@ -17,7 +17,7 @@ Supporting material for an exploration of the false discovery rate in open acces
 1. Make sure all required R libraries (RCurl, XML, tm, stats4, genefilter, stringr, and nlme) are installed. RCurl and XML may require additional dependencies depending on your operating system. genefilter is available through Bioconductor. 
 2. Run the R code found in `JournalSelection.R` to replicate the data collection process. This will generate the FDR estimates found in the data files and output partial data sets containing Journal, Year, and Estimate.
 3. The remaining covariates in the data sets can be verified by searching with journal abbreviations or full journal name on InCites. The two-year JIF and Open Access status for each journal is listed in the details of the journal.
-4. To replicate the analysis of the data, run the R code found in `JournalModels.R`. 
+4. To replicate the analysis of the data, run the R code found in `JournalModels.R`. All data sets used (with impact factor, open access status, and journal subject) are provided by the authors.
 
 ### How to use these files to perform analysis on a new set of journals
 1. In the JournalSelection.R file, replace "`journals.csv`" with a list of new journals (abbreviation as listed in the PubMed database is preferred, but full titles will often work just as well), and replace "`years`" with the desired years.
