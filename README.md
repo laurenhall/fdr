@@ -14,6 +14,16 @@ Supporting material for an exploration of the false discovery rate in open acces
 - data_final_ns.csv - Data set containing 102 journals, a subset of data_final with journals that switched from non-open access to open access during the study years (and were therefore tagged as both OA and not OA) removed from consideration.
 - data_fnal_nzns.csv - Data set containing 94 journals, a subset of data_final with both journals with FDR estimates effectively zero and journals that switched open access status removed. **This is the data set used in the main text.**
 
+### Data tables legend:
+ - **JRNL**: Journal name, PubMed abbreviation.
+ - **YEAR**: The year.
+ - **EST**: The estimated false discovery rate.
+ - **NPAPR**: The number of paper abstracts read for the given journal/year.
+ - **NPVAL**: The number of non-NA p-values scraped for the given journal/year.
+ - **JIF**: The two-year journal impact factor from InCites.
+ - **OA**: Binary, 1 if Open Access, 0 if closed access.
+ - **SUBJ**: Journal subject. "ONC" for Oncology journals, "GEN" for other/general Medicine journals.
+
 ### How to use these files to replicate the work of L. Hall and A. Hendricks:
 1. Make sure all required R libraries (RCurl, XML, tm, stats4, genefilter, stringr, and nlme) are installed. RCurl and XML may require additional dependencies depending on your operating system. genefilter is available through Bioconductor. 
 2. Run the R code found in `JournalSelection.R` to replicate the data collection process. This will generate the FDR estimates found in the data files and output partial data sets containing Journal, Year, and Estimate.
