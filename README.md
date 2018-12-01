@@ -22,7 +22,7 @@ Supporting material for an exploration of the false discovery rate in open acces
  - NPVAL -  The number of non-NA p-values scraped for the given journal/year.
  - JIF - The two-year journal impact factor from InCites.
  - OA - 1 if Open Access, 0 if closed access.
- - SUBJ - Journal subject. "ONC" for Oncology journals, "GEN" for other/general Medicine journals.
+ - SUBJ - Journal subject. "ONC" for Oncology journals, "GEN" for general Medicine journals.
 
 ### How to use these files to replicate the work of L. Hall and A. Hendricks:
 1. Make sure all required R libraries (RCurl, XML, tm, stats4, genefilter, stringr, and nlme) are installed. RCurl and XML may require additional dependencies depending on your operating system. genefilter is available through Bioconductor. 
