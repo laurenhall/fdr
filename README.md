@@ -52,5 +52,5 @@ write.table(problem_abstracts, file="problem_abstracts.txt")
     - Note that even when abstracts are being read correctly, the EM algorithm will occasionally fail to converge to due to insufficient data or an insufficient number of distinct p-values (ex. all p-values listed as "P < 0.01")
  6. Export the FDR estimates, journal titles, and years to a .csv file.
  7. To use the same covariates as the original study, navigate to InCites and search by journal name or abbreviation. Append the .csv file containing the journals, years, and FDR estimates with the two-year JIF and Open Access stats of each journal at each year.
- 8. Read in the collected data, and using the `nlme` R package, fit an appropriate linear mixed effects model to your data.
+ 8. Read in the collected data, and using the `lme4` R package, fit an appropriate linear mixed effects model to your data.
     - We suggest the use of JIF, OA, and JIF\*OA as covariates, and Journal as the random factor. 
