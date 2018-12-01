@@ -15,14 +15,14 @@ Supporting material for an exploration of the false discovery rate in open acces
 - data_fnal_nzns.csv - Data set containing 94 journals, a subset of data_final with both journals with FDR estimates effectively zero and journals that switched open access status removed. **This is the data set used in the main text.**
 
 ### Data tables legend:
- - **JRNL**: Journal name, PubMed abbreviation.
- - **YEAR**: The year.
- - **EST**: The estimated false discovery rate.
- - **NPAPR**: The number of paper abstracts read for the given journal/year.
- - **NPVAL**: The number of non-NA p-values scraped for the given journal/year.
- - **JIF**: The two-year journal impact factor from InCites.
- - **OA**: Binary, 1 if Open Access, 0 if closed access.
- - **SUBJ**: Journal subject. "ONC" for Oncology journals, "GEN" for other/general Medicine journals.
+ - JRNL - Journal name, PubMed abbreviation.
+ - YEAR - Journal publication year.
+ - EST - The estimated false discovery rate.
+ - NPAPR - The number of paper abstracts read for the given journal/year.
+ - NPVAL -  The number of non-NA p-values scraped for the given journal/year.
+ - JIF - The two-year journal impact factor from InCites.
+ - OA - 1 if Open Access, 0 if closed access.
+ - SUBJ - Journal subject. "ONC" for Oncology journals, "GEN" for other/general Medicine journals.
 
 ### How to use these files to replicate the work of L. Hall and A. Hendricks:
 1. Make sure all required R libraries (RCurl, XML, tm, stats4, genefilter, stringr, and nlme) are installed. RCurl and XML may require additional dependencies depending on your operating system. genefilter is available through Bioconductor. 
